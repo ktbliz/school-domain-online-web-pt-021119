@@ -26,7 +26,7 @@ def sort
   sorted_roster = @roster.collect { |grade, students|
     @roster[grade] = students.sort
   }
-  sorted_roster
+  return sorted_roster
 end 
 
 
