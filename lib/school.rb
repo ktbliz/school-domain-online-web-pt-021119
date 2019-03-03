@@ -23,7 +23,9 @@ def grade(grade)
 end 
 
 def sort 
-  
+  @roster.collect { |grade, students|
+    students.sort
+  }
 end 
 
 
