@@ -23,10 +23,10 @@ def grade(grade)
 end 
 
 def sort 
-  sorted_roster = @roster.collect { |grade, students|
+  @roster.collect { |grade, students|
     @roster[grade] = students.sort
   }
-  return sorted_roster
+  @roster 
 end 
 
 
